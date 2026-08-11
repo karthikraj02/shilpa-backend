@@ -43,7 +43,7 @@ const allowedOrigins = [
 // Preview deployments of this project only (never every *.vercel.app site).
 const previewOriginPattern = process.env.VERCEL_PREVIEW_PATTERN
   ? new RegExp(process.env.VERCEL_PREVIEW_PATTERN)
-  : /^https:\/\/m-sc-final-year-project[a-z0-9-]*\.vercel\.app$/;
+  : /^https:\/\/(m-sc-final-year-project|shilpa-frontend)[a-z0-9-]*\.vercel\.app$/;
 
 function isOriginAllowed(origin) {
   if (allowedOrigins.includes(origin)) return true;
